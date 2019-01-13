@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <Fragment>
         {this.state.astronauts.map(astronaut => {
-          return <div>
+          return <div key={astronaut.name}>
                    <h2>{astronaut.name}</h2>
                    <h4>{astronaut.craft}</h4>
                  </div>
